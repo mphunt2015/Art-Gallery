@@ -13,7 +13,7 @@ struct Image_GalleryApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(galleryImage: "Picture1")
         }
     }
 }
