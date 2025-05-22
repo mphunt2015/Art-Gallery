@@ -10,52 +10,48 @@ import SwiftData
 
 struct ContentView: View {
     @Environment(\.modelContext) private var modelContext
-    @Query private var items: [Item]
-
+    let picture1 = Image("Picture1")
+    let picture2 = Image("Picture2")
+    let picture3 = Image("Picture3")
+    let picture4 = Image("Picture4")
+    
     var body: some View {
-        NavigationSplitView {
-            List {
-                ForEach(items) { item in
-                    NavigationLink {
-                        Text("Item at \(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))")
-                    } label: {
-                        Text(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))
-                    }
-                }
-                .onDelete(perform: deleteItems)
-            }
-            .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    EditButton()
-                }
-                ToolbarItem {
-                    Button(action: addItem) {
-                        Label("Add Item", systemImage: "plus")
-                    }
-                }
-            }
-        } detail: {
-            Text("Select an item")
+        Text("Image Gallery").font(.title)
+        VStack(alignment: .leading, spacing: 20.0) {
+            picture1.resizable()
+                .aspectRatio(contentMode: .fit)
+                .cornerRadius(15)
         }
-    }
-
-    private func addItem() {
-        withAnimation {
-            let newItem = Item(timestamp: Date())
-            modelContext.insert(newItem)
+        .padding()
+        Button("Add") {
+            print("ADD BUTTON PRESSED")
         }
-    }
-
-    private func deleteItems(offsets: IndexSet) {
-        withAnimation {
-            for index in offsets {
-                modelContext.delete(items[index])
-            }
+        .buttonStyle(.borderedProminent)
+        Button("Delete") {
+            print("DELETE BUTTON PRESSED")
+        }
+        .buttonStyle(.borderless)
+        HStack {
+            Button("1") {
+                
+            }.buttonStyle(.borderedProminent)
+                .padding()
+            Button("2") {
+                
+            }.buttonStyle(.borderedProminent)
+                .padding()
+            Button("3") {
+                
+            }.buttonStyle(.borderedProminent)
+                .padding()
+            Button("4") {
+                
+            }.buttonStyle(.borderedProminent)
+                .padding()
         }
     }
 }
 
 #Preview {
     ContentView()
-        .modelContainer(for: Item.self, inMemory: true)
 }
