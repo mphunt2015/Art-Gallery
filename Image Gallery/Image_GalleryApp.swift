@@ -10,10 +10,15 @@ import SwiftData
 
 @main
 struct Image_GalleryApp: App {
-
+    
+    init (){
+        print("Launching app...")
+    }
+    
     var body: some Scene {
         WindowGroup {
-            ContentView(galleryImage: "Picture1")
+//            ContentView(galleryImage: "Picture1")
+            ContentView(galleryImage: "Picture1", images: [], headerTitle: "")
         }
     }
 }
