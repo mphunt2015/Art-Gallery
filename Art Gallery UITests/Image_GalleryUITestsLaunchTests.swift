@@ -7,7 +7,7 @@
 
 import XCTest
 
-final class Image_GalleryUITestsLaunchTests: XCTestCase {
+final class Art_Gallery_UITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true

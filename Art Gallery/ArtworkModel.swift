@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ImageModel: Codable {
+struct ArtworkModel: Codable {
     let title: String
     let imageUrl: String
 }

@@ -24,25 +24,25 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		8DDB72DD2DDCD45700759455 /* Image Gallery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Image Gallery.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		8DDB72EC2DDCD45800759455 /* Image GalleryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Image GalleryTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		8DDB72F62DDCD45800759455 /* Image GalleryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Image GalleryUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8DDB72DD2DDCD45700759455 /* Art Gallery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Art Gallery.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8DDB72EC2DDCD45800759455 /* Art GalleryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Art GalleryTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8DDB72F62DDCD45800759455 /* Art GalleryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Art GalleryUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		8DDB72DF2DDCD45700759455 /* Image Gallery */ = {
+		8DDB72DF2DDCD45700759455 /* Art Gallery */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "Image Gallery";
+			path = "Art Gallery";
 			sourceTree = "<group>";
 		};
-		8DDB72EF2DDCD45800759455 /* Image GalleryTests */ = {
+		8DDB72EF2DDCD45800759455 /* Art Gallery Tests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "Image GalleryTests";
+			path = "Art Gallery Tests";
 			sourceTree = "<group>";
 		};
-		8DDB72F92DDCD45800759455 /* Image GalleryUITests */ = {
+		8DDB72F92DDCD45800759455 /* Art Gallery UITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "Image GalleryUITests";
+			path = "Art Gallery UITests";
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -75,9 +75,9 @@
 		8DDB72D42DDCD45700759455 = {
 			isa = PBXGroup;
 			children = (
-				8DDB72DF2DDCD45700759455 /* Image Gallery */,
-				8DDB72EF2DDCD45800759455 /* Image GalleryTests */,
-				8DDB72F92DDCD45800759455 /* Image GalleryUITests */,
+				8DDB72DF2DDCD45700759455 /* Art Gallery */,
+				8DDB72EF2DDCD45800759455 /* Art Gallery Tests */,
+				8DDB72F92DDCD45800759455 /* Art Gallery UITests */,
 				8DDB72DE2DDCD45700759455 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -85,9 +85,9 @@
 		8DDB72DE2DDCD45700759455 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8DDB72DD2DDCD45700759455 /* Image Gallery.app */,
-				8DDB72EC2DDCD45800759455 /* Image GalleryTests.xctest */,
-				8DDB72F62DDCD45800759455 /* Image GalleryUITests.xctest */,
+				8DDB72DD2DDCD45700759455 /* Art Gallery.app */,
+				8DDB72EC2DDCD45800759455 /* Art GalleryTests.xctest */,
+				8DDB72F62DDCD45800759455 /* Art GalleryUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -95,9 +95,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8DDB72DC2DDCD45700759455 /* Image Gallery */ = {
+		8DDB72DC2DDCD45700759455 /* Art Gallery */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8DDB73002DDCD45800759455 /* Build configuration list for PBXNativeTarget "Image Gallery" */;
+			buildConfigurationList = 8DDB73002DDCD45800759455 /* Build configuration list for PBXNativeTarget "Art Gallery" */;
 			buildPhases = (
 				8DDB72D92DDCD45700759455 /* Sources */,
 				8DDB72DA2DDCD45700759455 /* Frameworks */,
@@ -108,18 +108,18 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				8DDB72DF2DDCD45700759455 /* Image Gallery */,
+				8DDB72DF2DDCD45700759455 /* Art Gallery */,
 			);
-			name = "Image Gallery";
+			name = "Art Gallery";
 			packageProductDependencies = (
 			);
 			productName = "Image Gallery";
-			productReference = 8DDB72DD2DDCD45700759455 /* Image Gallery.app */;
+			productReference = 8DDB72DD2DDCD45700759455 /* Art Gallery.app */;
 			productType = "com.apple.product-type.application";
 		};
-		8DDB72EB2DDCD45800759455 /* Image GalleryTests */ = {
+		8DDB72EB2DDCD45800759455 /* Art GalleryTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8DDB73032DDCD45800759455 /* Build configuration list for PBXNativeTarget "Image GalleryTests" */;
+			buildConfigurationList = 8DDB73032DDCD45800759455 /* Build configuration list for PBXNativeTarget "Art GalleryTests" */;
 			buildPhases = (
 				8DDB72E82DDCD45800759455 /* Sources */,
 				8DDB72E92DDCD45800759455 /* Frameworks */,
@@ -131,18 +131,18 @@
 				8DDB72EE2DDCD45800759455 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				8DDB72EF2DDCD45800759455 /* Image GalleryTests */,
+				8DDB72EF2DDCD45800759455 /* Art Gallery Tests */,
 			);
-			name = "Image GalleryTests";
+			name = "Art GalleryTests";
 			packageProductDependencies = (
 			);
 			productName = "Image GalleryTests";
-			productReference = 8DDB72EC2DDCD45800759455 /* Image GalleryTests.xctest */;
+			productReference = 8DDB72EC2DDCD45800759455 /* Art GalleryTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		8DDB72F52DDCD45800759455 /* Image GalleryUITests */ = {
+		8DDB72F52DDCD45800759455 /* Art GalleryUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8DDB73062DDCD45800759455 /* Build configuration list for PBXNativeTarget "Image GalleryUITests" */;
+			buildConfigurationList = 8DDB73062DDCD45800759455 /* Build configuration list for PBXNativeTarget "Art GalleryUITests" */;
 			buildPhases = (
 				8DDB72F22DDCD45800759455 /* Sources */,
 				8DDB72F32DDCD45800759455 /* Frameworks */,
@@ -154,13 +154,13 @@
 				8DDB72F82DDCD45800759455 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				8DDB72F92DDCD45800759455 /* Image GalleryUITests */,
+				8DDB72F92DDCD45800759455 /* Art Gallery UITests */,
 			);
-			name = "Image GalleryUITests";
+			name = "Art GalleryUITests";
 			packageProductDependencies = (
 			);
 			productName = "Image GalleryUITests";
-			productReference = 8DDB72F62DDCD45800759455 /* Image GalleryUITests.xctest */;
+			productReference = 8DDB72F62DDCD45800759455 /* Art GalleryUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -186,7 +186,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 8DDB72D82DDCD45700759455 /* Build configuration list for PBXProject "Image Gallery" */;
+			buildConfigurationList = 8DDB72D82DDCD45700759455 /* Build configuration list for PBXProject "Art Gallery" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -200,9 +200,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8DDB72DC2DDCD45700759455 /* Image Gallery */,
-				8DDB72EB2DDCD45800759455 /* Image GalleryTests */,
-				8DDB72F52DDCD45800759455 /* Image GalleryUITests */,
+				8DDB72DC2DDCD45700759455 /* Art Gallery */,
+				8DDB72EB2DDCD45800759455 /* Art GalleryTests */,
+				8DDB72F52DDCD45800759455 /* Art GalleryUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -258,12 +258,12 @@
 /* Begin PBXTargetDependency section */
 		8DDB72EE2DDCD45800759455 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 8DDB72DC2DDCD45700759455 /* Image Gallery */;
+			target = 8DDB72DC2DDCD45700759455 /* Art Gallery */;
 			targetProxy = 8DDB72ED2DDCD45800759455 /* PBXContainerItemProxy */;
 		};
 		8DDB72F82DDCD45800759455 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 8DDB72DC2DDCD45700759455 /* Image Gallery */;
+			target = 8DDB72DC2DDCD45700759455 /* Art Gallery */;
 			targetProxy = 8DDB72F72DDCD45800759455 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -463,7 +463,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Image Gallery.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Image Gallery";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Art Gallery.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Art Gallery";
 			};
 			name = Debug;
 		};
@@ -482,7 +482,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Image Gallery.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Image Gallery";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Art Gallery.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Art Gallery";
 			};
 			name = Release;
 		};
@@ -523,7 +523,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		8DDB72D82DDCD45700759455 /* Build configuration list for PBXProject "Image Gallery" */ = {
+		8DDB72D82DDCD45700759455 /* Build configuration list for PBXProject "Art Gallery" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8DDB72FE2DDCD45800759455 /* Debug */,
@@ -532,7 +532,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8DDB73002DDCD45800759455 /* Build configuration list for PBXNativeTarget "Image Gallery" */ = {
+		8DDB73002DDCD45800759455 /* Build configuration list for PBXNativeTarget "Art Gallery" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8DDB73012DDCD45800759455 /* Debug */,
@@ -541,7 +541,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8DDB73032DDCD45800759455 /* Build configuration list for PBXNativeTarget "Image GalleryTests" */ = {
+		8DDB73032DDCD45800759455 /* Build configuration list for PBXNativeTarget "Art GalleryTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8DDB73042DDCD45800759455 /* Debug */,
@@ -550,7 +550,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8DDB73062DDCD45800759455 /* Build configuration list for PBXNativeTarget "Image GalleryUITests" */ = {
+		8DDB73062DDCD45800759455 /* Build configuration list for PBXNativeTarget "Art GalleryUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8DDB73072DDCD45800759455 /* Debug */,

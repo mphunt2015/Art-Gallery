@@ -7,16 +7,17 @@
 
 import SwiftUI
 
-struct UrUrlImageView: View {
+struct UrlImageView: View {
+    let imageUrl: String
     var body: some View {
-        AsyncImage(url: URL(string: "https://aspph-redesign-wp-production.s3.amazonaws.com/wp-content/uploads/2025/04/54454151678_69e7852494_o-1024x683.jpg")) {
+        AsyncImage(url: URL(string: imageUrl)) {
             image in
             image
                 .resizable()
                 .scaledToFit()
                 .frame(width: 300, height: 300)
         } placeholder: {
-            Text("Placeholder")
+            Text("")
         }
     }
 }
