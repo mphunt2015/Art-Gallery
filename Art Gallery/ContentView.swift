@@ -30,7 +30,7 @@ struct ContentView: View {
             HeaderView(title: headerTitle)
 //                    AddDeleteButtonView()
     
-            \UrlImageView(imageUrl: imageUrl)
+            UrlImageView(imageUrl: imageUrl)
             
 //                    TODO: Ensure buttons are scrollable if there are more than 4 in a row
 //                    This HStack dynamically displays buttons corresponding to each artwork retrieved from the API
