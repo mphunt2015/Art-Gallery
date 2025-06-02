@@ -37,9 +37,12 @@ struct ContentView: View {
             HStack {
                 ForEach(imageUrls.indices, id: \.self) {
                     index in
-                    Button("\(titles[index])") {
+                    Button {
                         changeImage(index: index)
+                    } label: {
+                        UrlImageButtonView(imageUrl: "\(imageUrls[index])")
                     }
+
                 }
             }
                 }
