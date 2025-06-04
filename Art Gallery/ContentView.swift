@@ -34,15 +34,17 @@ struct ContentView: View {
             
 //                    TODO: Ensure buttons are scrollable if there are more than 4 in a row
 //                    This HStack dynamically displays buttons corresponding to each artwork retrieved from the API
-            HStack {
-                ForEach(imageUrls.indices, id: \.self) {
-                    index in
-                    Button {
-                        changeImage(index: index)
-                    } label: {
-                        UrlImageButtonView(imageUrl: "\(imageUrls[index])")
+            ScrollView(.horizontal) {
+                HStack {
+                    ForEach(imageUrls.indices, id: \.self) {
+                        index in
+                        Button {
+                            changeImage(index: index)
+                        } label: {
+                            UrlImageButtonView(imageUrl: "\(imageUrls[index])")
+                        }
+                        
                     }
-
                 }
             }
                 }

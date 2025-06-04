@@ -14,8 +14,9 @@ struct UrlImageButtonView: View {
             image in
             image
                 .resizable()
-                .scaledToFit()
-                .frame(width: 30, height: 30)
+                .aspectRatio(contentMode: .fill)
+                .frame(width: 100, height: 100)
+                .clipped(antialiased: true)
         } placeholder: {
             Text("")
         }

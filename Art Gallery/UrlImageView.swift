@@ -14,8 +14,9 @@ struct UrlImageView: View {
             image in
             image
                 .resizable()
-                .scaledToFit()
-                .frame(width: 300, height: 300)
+                .aspectRatio(contentMode: .fill)
+                .frame(width: 250, height: 250)
+                .clipped(antialiased: true)
         } placeholder: {
             Text("")
         }
