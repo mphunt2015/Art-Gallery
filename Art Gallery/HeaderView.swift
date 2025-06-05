@@ -16,5 +16,7 @@ struct HeaderView: View {
     var body: some View {
         Text(title)
             .font(.title)
+            .lineLimit(1)
+            .minimumScaleFactor(0.5)
     }
 }
