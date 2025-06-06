@@ -9,7 +9,20 @@ import SwiftUI
 
 struct HomeView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationStack {
+            Text("Art Gallery Home")
+            NavigationLink("Go to Gallery Info View", value: "GalleryInfoView")
+            NavigationLink("Go to Gallery", value: "GalleryView")
+                .navigationTitle("Main Menu")
+                .navigationDestination(for: String.self) { value in
+                    if value == "GalleryInfoView" {
+                        GalleryInfoView()
+                    }
+                    else if value == "GalleryView" {
+                        GalleryView()
+                    }
+                }
+        }
     }
 }
 

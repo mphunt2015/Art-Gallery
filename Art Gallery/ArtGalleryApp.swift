@@ -1,6 +1,6 @@
 //
-//  Image_GalleryApp.swift
-//  Image Gallery
+//  ArtGalleryApp.swift
+//  Art Gallery
 //
 //  Created by Michael Hunt on 5/20/25.
 //
@@ -9,7 +9,7 @@ import SwiftUI
 import SwiftData
 
 @main
-struct Image_GalleryApp: App {
+struct ArtGalleryApp: App {
     
     init (){
         print("Launching app...")
@@ -17,7 +17,7 @@ struct Image_GalleryApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ContentView(artworks: [], headerTitle: "")
+            ContentView()
         }
     }
 }

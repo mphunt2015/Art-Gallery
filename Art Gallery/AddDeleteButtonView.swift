@@ -1,8 +1,8 @@
 //
 //  AddDeleteButtonView.swift
-//  Image Gallery
+//  Art Gallery
 //
-//  Created by Michael Hunt on 5/22/25.
+//  Updated by Michael Hunt on 6/5/25.
 //
 
 import SwiftUI

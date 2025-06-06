@@ -2,17 +2,45 @@
 //  GalleryView.swift
 //  Art Gallery
 //
-//  Created by Michael Hunt on 6/4/25.
+//  Updated by Michael Hunt on 6/5/25.
 //
 
 import SwiftUI
 
 struct GalleryView: View {
+    @StateObject var galleryViewModel: GalleryViewModel = GalleryViewModel()
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ScrollView {
+            List(galleryViewModel.artworks, id: \.title) {
+                image in Text(image.title)
+            }
+            .task {
+                galleryViewModel.fetchImages()
+            }
+            
+            HeaderView(title: galleryViewModel.headerTitle)
+//                    AddDeleteButtonView()
+    
+            UrlImageView(imageUrl: galleryViewModel.imageUrl)
+            
+//                    This HStack dynamically displays buttons corresponding to each artwork retrieved from the API
+            ScrollView(.horizontal) {
+                HStack {
+                    ForEach(galleryViewModel.imageUrls.indices, id: \.self) {
+                        index in
+                        Button {
+                            galleryViewModel.changeImage(index: index)
+                        } label: {
+                            UrlImageButtonView(imageUrl: "\(galleryViewModel.imageUrls[index])")
+                        }
+                        
+                    }
+                }
+            }
+                }
     }
 }
 
-#Preview {
-    GalleryView()
-}
+//#Preview {
+//    GalleryView()
+//}
