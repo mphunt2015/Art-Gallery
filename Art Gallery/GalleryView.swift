@@ -2,7 +2,7 @@
 //  GalleryView.swift
 //  Art Gallery
 //
-//  Updated by Michael Hunt on 6/5/25.
+//  Updated by Michael Hunt on 6/6/25.
 //
 
 import SwiftUI
@@ -15,15 +15,16 @@ struct GalleryView: View {
                 image in Text(image.title)
             }
             .task {
-                galleryViewModel.fetchImages()
+                await galleryViewModel.fetchImages()
             }
             
             HeaderView(title: galleryViewModel.headerTitle)
-//                    AddDeleteButtonView()
+//          TODO: Incorporate AddDeleteButtonView and functionality
+//          AddDeleteButtonView()
     
             UrlImageView(imageUrl: galleryViewModel.imageUrl)
             
-//                    This HStack dynamically displays buttons corresponding to each artwork retrieved from the API
+//          This HStack dynamically displays buttons corresponding to each artwork retrieved from the API
             ScrollView(.horizontal) {
                 HStack {
                     ForEach(galleryViewModel.imageUrls.indices, id: \.self) {
@@ -37,7 +38,7 @@ struct GalleryView: View {
                     }
                 }
             }
-                }
+        }
     }
 }
 
